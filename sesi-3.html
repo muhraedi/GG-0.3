@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spotify</title>
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    header {
+      background-color: #1DB954;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .song-list {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+
+    .song-list h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .song {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .song-details {
+      flex: 1;
+    }
+
+    .song-title {
+      font-weight: bold;
+    }
+
+    .song-artist {
+      color: #666;
+    }
+
+    .most-played-songs {
+      background-color: #f7f7f7;
+      padding: 20px;
+    }
+
+    .add-to-playlist {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Spotify</h1>
+  </header>
+
+  <main>
+    <div class="section">
+      <div class="song-list">
+        <h2>All Songs</h2>
+        <div class="song">
+          <div class="song-details">
+            <div class="song-title">Song Title 1</div>
+            <div class="song-artist">Artist Name 1</div>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-details">
+            <div class="song-title">Song Title 2</div>
+            <div class="song-artist">Artist Name 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="song-list most-played-songs">
+        <h2>Most Played Songs</h2>
+        <div class="song">
+          <div class="song-details">
+            <div class="song-title">Song Title 1</div>
+            <div class="song-artist">Artist Name 1</div>
+          </div>
+        </div>
+        <div class="song">
+          <div class="song-details">
+            <div class="song-title">Song Title 2</div>
+            <div class="song-artist">Artist Name 2</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="add-to-playlist">
+        <h2>Add Songs to Your Playlist</h2>
+        <form>
+          <input type="text" placeholder="Song Title">
+          <input type="text" placeholder="Artist Name">
+          <input type="submit" value="Add">
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    &copy; 2023 Spotify. All rights reserved.
+  </footer>
+</body>
+</html>
