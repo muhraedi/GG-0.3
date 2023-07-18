@@ -1,0 +1,52 @@
+[
+    {
+      "name": "Billie Eilish",
+      "dateOfBirth": "2001-12-18",
+      "genres": ["Pop", "Alternative"]
+    },
+    {
+      "name": "Olivia Rodrigo",
+      "dateOfBirth": "2003-02-20",
+      "genres": ["Pop", "Alternative"]
+    },
+    {
+      "name": "Taylor Swift",
+      "dateOfBirth": "1989-12-13",
+      "genres": ["Pop", "Country"]
+    },
+    {
+      "name": "The Weeknd",
+      "dateOfBirth": "1990-02-16",
+      "genres": ["R&B", "EDM"]
+    },
+    {
+      "name": "Bad Bunny",
+      "dateOfBirth": "1994-03-10",
+      "genres": ["Reggaeton", "Latin Trap"]
+    },
+    {
+      "name": "Nicki Minaj",
+      "dateOfBirth": "1982-12-08",
+      "genres": ["Hip Hop", "Rap"]
+    },
+    {
+      "name": "SZA",
+      "dateOfBirth": "1989-11-08",
+      "genres": ["R&B", "Neo Soul"]
+    },
+    {
+      "name": "Harry Styles",
+      "dateOfBirth": "1994-02-01",
+      "genres": ["Pop", "Rock"]
+    },
+    {
+      "name": "NewJeans",
+      "dateOfBirth": "2022-08-01",
+      "genres": ["Pop", "K-Pop"]
+    },
+    {
+      "name": "Miley Cyrus",
+      "dateOfBirth": "1992-11-23",
+      "genres": ["Pop", "Rock"]
+    }
+]

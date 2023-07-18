@@ -1,0 +1,52 @@
+[
+    {
+      "title": "What Was I Made For?",
+      "artist": "Billie Eilish",
+      "album": "What Was I Made For?"
+    },
+    {
+      "title": "vampire",
+      "artist": "Olivia Rodrigo",
+      "album": "vampire"
+    },
+    {
+      "title": "Cruel Summer",
+      "artist": "Taylor Swift",
+      "album": "Lover"
+    },
+    {
+      "title": "Popular",
+      "artist": ["The Weeknd", "Playboi Carti", "Madonna"],
+      "album": "Popular"
+    },
+    {
+      "title": "WHERE SHE GOES",
+      "artist": "Bad Bunny",
+      "album": "WHERE SHE GOES"
+    },
+    {
+      "title": "Barbie World",
+      "artist": ["Nicki Minaj", "Ice Spice", "Aqua"],
+      "album": "Barbie World"
+    },
+    {
+      "title": "Kill Bill",
+      "artist": "SZA",
+      "album": "SOS"
+    },
+    {
+      "title": "As It Was",
+      "artist": "Harry Styles",
+      "album": "As it Was"
+    },
+    {
+      "title": "Super Shy",
+      "artist": "NewJeans",
+      "album": "NewJeans 'Super Shy'"
+    },
+    {
+      "title": "Flowers",
+      "artist": "Miley Cyrus",
+      "album": "Flowers"
+    }
+]
