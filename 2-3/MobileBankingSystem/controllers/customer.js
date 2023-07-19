@@ -38,7 +38,7 @@ router.post("/customer", (req, res) => {
         const costumer = createCustomer(name, email, balance);
         customers.push(costumer);
         res.status(201).json({message: "Customer created successfully"})
-    } catch (error) {
+    } catch (e) {
         res.status(500).json({error: e.message})
     }
 });
