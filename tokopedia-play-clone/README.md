@@ -77,7 +77,7 @@ The API follows a RESTful design, providing endpoints to manage videos, products
 ## API Request and Response
 
 Please refer to the following link for the API request and response:
-[Link - API Request and Response](https://gist.github.com/your_username/your_gist_id)
+[Link - API Request and Response](https://github.com/muhraedi/GG-3.0/blob/main/tokopedia-play-clone/backend/API-Tokopedia-Play-Clone.md)
 
 ## How to Run Locally
 
