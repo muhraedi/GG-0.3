@@ -1,6 +1,6 @@
 # Video
 * Video object
-```json
+```
 {
   id: objectId
   urlImageThumbnail: string
@@ -158,7 +158,7 @@
 
 # Products
 * Product object
-```json
+```
 {
   id: objectId
   title: string
@@ -191,7 +191,7 @@
 ``` 
 # Comments
 * Comment object
-```json
+```
 {
   id: objectId
   username: string
