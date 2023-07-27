@@ -1,8 +1,8 @@
-# API Documentation - Video Management System
+# API Documentation - Tokopedia Play Clone
 
 ## Database Structure
 
-The database structure for the Video Management System is defined using Mongoose schemas. There are three main schemas: `videoSchema`, `productSchema`, and `commentSchema`.
+The database structure for the Tokopedia Play Clone is defined using Mongoose schemas. There are three main schemas: `videoSchema`, `productSchema`, and `commentSchema`.
 
 ### Video Schema
 ```javascript
