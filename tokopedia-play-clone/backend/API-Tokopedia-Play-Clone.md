@@ -200,18 +200,19 @@
 }
 ```
 
-**POST /comment/:videoId**
+**POST /comment**
 ----
   Adds a new comment to a specific video.
 * **URL Params**  
-  *Required:* `videoId=[string]`
+  None
 * **Headers**  
   Content-Type: application/json  
 * **Data Params**  
 ```
  {
   "username": "john_doe",
-  "comment": "Great video! Thanks for sharing."
+  "comment": "Great video! Thanks for sharing.",
+  "videoId": "64c1264d49a4811254a59f41"
  }
 ```
 * **Success Response:**  
