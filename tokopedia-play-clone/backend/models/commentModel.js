@@ -9,7 +9,10 @@ const commentSchema = new mongoose.Schema({
         required: true,
         type: String,
     },
-    videoId: mongoose.Types.ObjectId
+    videoId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Video',
+    }
 }, { timestamps: true })
 
 export default mongoose.model('Comment', commentSchema);
