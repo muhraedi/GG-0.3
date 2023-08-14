@@ -3,6 +3,8 @@
 ```
 {
   id: objectId
+  title: string
+  urlVideo: string
   urlImageThumbnail: string
   products: array
 }
@@ -18,30 +20,7 @@
   Content-Type: application/json  
 * **Success Response:**  
 * **Code:** 200  
-  **Content:**  
-```
-{
-  "videos": [
-    {
-      "urlImageThumbnail": "https://example.com/thumbnail.jpg",
-      "products": [
-        {
-          "linkProduct": "https://example.com/product1",
-          "title": "Product 1",
-          "price": 19.99
-        },
-        {
-          "linkProduct": "https://example.com/product2",
-          "title": "Product 2",
-          "price": 29.99
-        }
-      ]
-    },
-    // More videos...
-  ]
-}
-
-```
+  **Content:**  `{ <video_object> }`
 
 **GET /video/:id**
 ----
@@ -68,36 +47,24 @@
   Content-Type: application/json  
 * **Data Params**  
 ```
- {
-  "urlImageThumbnail": "https://example.com/thumbnail.jpg",
+{
+  "title": "Title 1",
+  "urlVideo": "https://www.youtube.com/embed/youtubeVideoId",
+  "views": 7782,
   "products": [
     {
       "linkProduct": "https://example.com/product1",
+      "linkImage": "https://example.com/product1.jpg"
       "title": "Product 1",
-      "price": 19.99
+      "price": 18490000
     },
     // More products...
   ]
 }
-
 ```
 * **Success Response:**  
 * **Code:** 200  
-  **Content:**
-```
-{
-  "urlImageThumbnail": "https://example.com/thumbnail.jpg",
-  "products": [
-    {
-      "linkProduct": "https://example.com/product1",
-      "title": "Product 1",
-      "price": 19.99
-    },
-    // More products...
-  ]
-}
-
-```
+  **Content:** `{ <video_object> }` 
 
 **PATCH /video/:id**
 ----
@@ -107,36 +74,25 @@
 * **Data Params**  
 ```
 {
-  "urlImageThumbnail": "https://example.com/new_thumbnail.jpg",
+  "title": "Title 1",
+  "urlVideo": "https://www.youtube.com/embed/youtubeVideoId",
+  "views": 7782,
   "products": [
     {
-      "linkProduct": "https://example.com/new_product1",
-      "title": "New Product 1",
-      "price": 24.99
+      "linkProduct": "https://example.com/product1",
+      "linkImage": "https://example.com/product1.jpg"
+      "title": "Product 1",
+      "price": 18490000
     },
     // More products...
   ]
 }
-
 ```
 * **Headers**  
   Content-Type: application/json  
 * **Success Response:** 
 * **Code:** 200  
-  **Content:**  
-```
-{
-  "urlImageThumbnail": "https://example.com/new_thumbnail.jpg",
-  "products": [
-    {
-      "linkProduct": "https://example.com/new_product1",
-      "title": "New Product 1",
-      "price": 24.99
-    },
-    // More products...
-  ]
-}
-```
+  **Content:**  `{ <video_object> }` 
 * **Error Response:**  
   * **Code:** 404
   **Content:** `{ message: error.message }`  
@@ -161,6 +117,8 @@
 ```
 {
   id: objectId
+  linkProduct: string
+  linkImage: string
   title: string
   price: float
 }
@@ -176,19 +134,8 @@
   Content-Type: application/json  
 * **Success Response:** 
 * **Code:** 200  
-  **Content:**  
-```
-{
-    "products": [
-        {
-            "_id": "64c1264d49a4811254a59f41",
-            "linkProduct": "xxxx",
-            "title": "yyyyyyy",
-            "price": 2133123
-        }
-    ]
-}
-``` 
+  **Content:**  `{ <product_object> }` 
+
 # Comments
 * Comment object
 ```
@@ -233,18 +180,4 @@
   None
 * **Success Response:**  
 * **Code:** 200  
-  **Content:**
-```
-{
-  "comments": [
-    {
-      "username": "john_doe",
-      "comment": "Great video! Thanks for sharing.",
-      "createdAt": "2023-07-26T12:34:56.789Z",
-      "updatedAt": "2023-07-26T12:34:56.789Z"
-    },
-    // More comments...
-  ]
-}
-
-```
+  **Content:**  `{ <comment_object> }` 

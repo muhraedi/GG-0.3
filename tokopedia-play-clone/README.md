@@ -7,31 +7,46 @@ The database structure for the Tokopedia Play Clone is defined using Mongoose sc
 ### Video Schema
 ```javascript
 const videoSchema = new mongoose.Schema({
-  urlImageThumbnail: {
-    required: true,
-    type: String,
-  },
-  products: [productSchema],
-});
+    title: {
+        required: true,
+        type: String
+    },
+    urlVideo: {
+        required: true,
+        type: String
+    },
+    urlImageThumbnail: {
+        required: true,
+        type: String
+    },
+    views: {
+        type: Number
+    },
+    products: [productSchema]
+}, { timestamps: true })
 ```
 
-The `videoSchema` represents a video in the system. It contains the URL of the video's thumbnail image and an array of associated products.
+The `videoSchema` represents a video in the system. It contains the URL of the video's thumbnail image and an array of associated products. The { timestamps: true } option adds createdAt and updatedAt fields to the comments for tracking when they were created and last updated.
 
 ### Product Schema
 ```javascript
 export const productSchema = new mongoose.Schema({
-  linkProduct: {
-    type: String,
-    required: true,
-  },
-  title: {
-    type: String,
-    required: true,
-  },
-  price: {
-    type: Number,
-    required: true,
-  },
+    linkProduct: {
+        type: String,
+        required: true,
+    },
+    linkImage: {
+        type: String,
+        required: true,
+    },
+    title: {
+        type: String,
+        required: true,
+    },
+    price: {
+        type: Number,
+        required: true,
+    }
 });
 ```
 
@@ -40,15 +55,18 @@ The `productSchema` defines the structure of a product associated with a video. 
 ### Comment Schema
 ```javascript
 const commentSchema = new mongoose.Schema({
-  username: {
-    required: true,
-    type: String,
-  },
-  comment: {
-    required: true,
-    type: String,
-  },
-  videoId: mongoose.Types.ObjectId,
+    username: {
+        required: true,
+        type: String,
+    },
+    comment: {
+        required: true,
+        type: String,
+    },
+    videoId: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Video',
+    }
 }, { timestamps: true });
 ```
 
