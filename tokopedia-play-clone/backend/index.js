@@ -2,6 +2,7 @@ import dotenv from 'dotenv';
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import videoRouter from './routes/videoRoute.js';
 import productRouter from './routes/productRoute.js';
 import commentRouter from './routes/commentRoute.js';
@@ -30,6 +31,7 @@ app.use(
         extended: true,
     }),
 );
+app.use(cors());
 app.use('/', videoRouter)
 app.use('/', productRouter)
 app.use('/', commentRouter)

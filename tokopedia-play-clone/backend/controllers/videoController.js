@@ -19,9 +19,17 @@ const getVideoById = async (req, res) => {
 }
 
 const saveVideo = async (req, res) => {
-    const video = new Video(req.body);
+    const { title, urlVideo, views, products } = new Video(req.body);
+    const urlId = urlVideo.substring(urlVideo.length - 11);
     try {
-        const videoToSave = await video.save();
+        const videoToSave = await new Video({
+            title,
+            urlVideo,
+            urlImageThumbnail: `https://i.ytimg.com/vi/${urlId}/maxresdefault.jpg`,
+            views,
+            products,
+        });
+        await videoToSave.save();
         res.status(201).json(videoToSave);
     } catch (error) {
         res.status(400).json({message: error.message});
